@@ -1,0 +1,59 @@
+---
+layout: page
+title: "All Terasology tutorials, linked from one place"
+---
+<div class="row">
+  <div class="col s12 m6 l4">
+    <h2>
+      Introduction to Terasology
+    </h2>
+    <p>Terasology is both a game and a game engine, written in Java. Because of this, while it is possible to create
+      simple assets, like new blocks, without knowledge of Java, for anything more complicated at least a bit of
+      knowledge about it is required. Don't worry though, if you don't know Java, as there exists a great deal of good
+      Java tutorials out there on the internet, and Terasology codebase was made with simplicity for module developers
+      &mdash;that is, <b>YOU</b> &mdash; in mind. So, go google for one of those tutorials and then come back here!</p>
+    <p>
+      Back already? Then continue to our tutorials following, which will guide you through setting up the developer
+      workspace.
+    </p>
+    <a href="https://metaterasology.github.io/docs/developerIntro/fullWorkspace.html">Tutorial</a>
+    <p>
+      Done that already? Then pop on our server at <a href="https://discord.gg/Terasology/">https://discord.gg/Terasology/</a>
+      (or, if you prefer IRC, the same chat is bridged both ways to #terasology on freenode, so feel free to pop in
+      there).
+    </p>
+    <p>
+      From this point onwards, you can start trying to figure things out on your own, or continue following our handy
+      tutorials. If you opt for the first option, though, be wary of several things:
+    </p>
+    <ul class="browser-default">
+      <li><i>y</i> axis is the vertical one</li>
+      <li>
+        The whole architecture is based off
+        <a href="https://metaterasology.github.io/docs/concepts/entitySystem.html">ECS</a>
+      </li>
+      <li>
+        Stuff is loaded solely through our asset-handling library <i>gestalt</i>, and any attempt to access filesystem
+        directly will result in sandbox violation and crash
+      </li>
+    </ul>
+  </div>
+  <div class="col s12 m6 l4">
+    <h2>
+      Creating simple assets
+    </h2>
+    <p>
+      If you want to create only simple assets, that is blocks/shapes/whatever, that don't have any functionality and
+      just <i>are</i>, you don't need to have much coding experience. In fact, you don't need to have any.
+    </p>
+    <div class="collection">
+      <a class="collection-item" href="https://github.com/Terasology/TutorialAssetSystem/wiki/Setup">Create a new module</a>
+      <a class="collection-item" href="https://github.com/Terasology/TutorialAssetSystem/wiki/Add-New-Block">Add a block to that module</a>
+      <a class="collection-item" href="https://github.com/Terasology/TutorialAssetSystem/wiki/Add-New-Item">Add an item to that module</a>
+      <a class="collection-item" href="https://github.com/Terasology/TutorialAssetSystem/wiki/Add-New-Creature">Add a creature to that module</a>
+    </div>
+  </div>
+  <div class="col s12 m6 l4">
+    <h2>More to come...</h2>
+  </div>
+</div>
