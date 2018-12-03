@@ -16,3 +16,5 @@ paginate: 6
 paginate_path: "/blog/page:num/"
 collections:
   - api_modules
+  - components
+  - events
