@@ -26,8 +26,18 @@ title: "Officially recommended modules providing common functionality"
 <div class="modal" id="modal{{module.name}}">
   <div class="modal-content">
     <h1>{{module.name}}</h1>
+    <p>{{module.description}}</p>
     {{module.content | markdownify}}
-    {% if module.has_components %}
+
+    {% comment %} Check if module has any components at all {% endcomment %}
+    {% assign has_components = false %}
+    {% for component in site.components %}
+    {% if component.module == module.name %}
+    {% assign has_components = true %}
+    {% endif %}
+    {% endfor %}
+
+    {% if has_components %}
       <hr/>
       <h2>Components</h2>
       {% for component in site.components %}
@@ -41,7 +51,16 @@ title: "Officially recommended modules providing common functionality"
         {% endif %}
       {% endfor %}
     {% endif %}
-    {% if module.has_events %}
+
+    {% comment %} Check if module has any events at all {% endcomment %}
+    {% assign has_events = false %}
+    {% for event in site.events %}
+    {% if event.module == module.name %}
+    {% assign has_events = true %}
+    {% endif %}
+    {% endfor %}
+
+    {% if has_events %}
       <hr/>
       <h2>Events</h2>
       {% for event in site.events %}
