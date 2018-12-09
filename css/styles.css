@@ -212,3 +212,57 @@ h5 {
   margin-left: .333em;
   margin-right: .333em;
 }
+
+/*
+from here down - code highlighting for java - rouge highlighter
+*/
+
+code.highlighter-rouge {
+  font-weight: bold;
+}
+
+figure.highlight {
+  padding: 1em 2em;
+  background: #2b2b2b;
+}
+
+code.language-java .kd {
+  color: #cc7832;
+}
+
+code.language-java .k {
+  color: #cc7832;
+}
+
+
+code.language-java .kt {
+  color: #cc7832;
+}
+
+code.language-java .n {
+  color: #9876aa;
+}
+
+code.language-java .na {
+  color: #9876aa;
+}
+
+code.language-java .nd {
+  color: #ffc66d;
+}
+
+code.language-java .nf {
+  color: #a9b7c6;
+}
+
+code.language-java .s {
+  color: #a5c25c;
+}
+
+code.language-java .mi {
+  color: #6897bb;
+}
+
+code.language-java .o {
+  color: #d8d8d8;
+}
